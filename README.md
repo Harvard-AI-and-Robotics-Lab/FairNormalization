@@ -24,6 +24,14 @@ To run the experiments with the baseline models with the proposed FIN module on 
 ./scripts/train_glaucoma_fair_proposed_npj.sh
 ```
 
+# Citation
+
+To cite the work:
+
+```
+Shi, Min, Yan Luo, Yu Tian, Lucy Q. Shen, Tobias Elze, Nazlee Zebardast, Mohammad Eslami et al. "Equitable Artificial Intelligence for Glaucoma Screening with Fair Identity Normalization." medRxiv (2023): 2023-12.
+```
+
 # Licence
 
 Apache License 2.0

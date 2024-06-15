@@ -1,4 +1,4 @@
-# EquitableAI
+# FairNormalization
 
 The code for the paper entitled **Equitable Artificial Intelligence for Glaucoma Screening with Fair Identity Normalization**.
 

@@ -30,7 +30,7 @@ else
 	BATCH_SIZE=6
 fi
 
-SPLIT_FILE=split7383.csv # ( split1064.csv split5374.csv split4934.csv )
+SPLIT_FILE=split.csv # ( split1064.csv split5374.csv split4934.csv )
 IMBALANCE_BETA=0.9999
 IMBALANCE_BETA=-1
 # SUBSET_NAME=( val_3k_seed1126 val_3k_seed1458 val_3k_seed1980 val_3k_seed2793 val_3k_seed3839 val_3k_seed4117 val_3k_seed5767 val_3k_seed7477 val_3k_seed9547 val_3k_seed9667 )

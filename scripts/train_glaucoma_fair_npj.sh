@@ -64,7 +64,7 @@ do
 # 		--attribute_type ${ATTRIBUTE_TYPE} \
 # 		--subset_name ${SUBSET_NAME} 
 # 		# --seed 13 \
-python train_glaucoma_fair_allattr_withsplit_retfound.py \
+python train_glaucoma_fair_allattr_retfound.py \
 		--data_dir /data/home/shim/pyspace/fairness/dataset/ \
 		--result_dir ./results_grape/glaucoma_${PROGRESS_TYPE}_${MODALITY_TYPE}_${ATTRIBUTE_TYPE[$j]}/fullysup_${MODEL_TYPE}_${MODALITY_TYPE}_Task${TASK}_lr${LR}_bz${BATCH_SIZE}_beta${IMBALANCE_BETA}_${SUBSET_NAME} \
 		--model_type ${MODEL_TYPE} \

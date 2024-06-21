@@ -33,8 +33,7 @@ fi
 LR=5e-4
 BATCH_SIZE=6
 
-# SPLIT_FILE=split7383.csv # ( split1064.csv split5374.csv split4934.csv )
-SPLIT_FILE=split1064.csv # split1582.csv split1064.csv split2351.csv
+SPLIT_FILE=split.csv 
 IMBALANCE_BETA=0.9999
 IMBALANCE_BETA=-1
 DATASET=grape
@@ -50,7 +49,7 @@ do
 PERF_FILE=${MODEL_TYPE}_${MODALITY_TYPE}_${ATTRIBUTE_TYPE[$j]}.csv
 for (( i=0; i<5; i++ ));
 do
-python train_glaucoma_fair_allattr_withsplit.py \
+python train_glaucoma_fair_allattr.py \
 		--data_dir /data/home/shim/pyspace/fairness/dataset/ \
 		--result_dir ./results_grape/glaucoma_${PROGRESS_TYPE}_${MODALITY_TYPE}_${ATTRIBUTE_TYPE[$j]}/fullysup_${MODEL_TYPE}_${MODALITY_TYPE}_Task${TASK}_lr${LR}_bz${BATCH_SIZE}_beta${IMBALANCE_BETA}_${SUBSET_NAME} \
 		--model_type ${MODEL_TYPE} \

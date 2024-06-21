@@ -51,7 +51,7 @@ do
 PERF_FILE=${MODEL_TYPE}_${MODALITY_TYPE}_${ATTRIBUTE_TYPE[$j]}.csv
 for (( i=0; i<5; i++ ));
 do
-python train_glaucoma_fair_allattr_withsplit_augmentation.py \
+python train_glaucoma_fair_allattr_augmentation.py \
 		--data_dir /data/home/shim/pyspace/fairness/dataset/ \
 		--result_dir ./results_aug_grape/glaucoma_${PROGRESS_TYPE}_${AUG_METHOD}_${MODALITY_TYPE}_${ATTRIBUTE_TYPE[$j]}/fullysup_${MODEL_TYPE}_${MODALITY_TYPE}_Task${TASK}_lr${LR}_bz${BATCH_SIZE}_beta${IMBALANCE_BETA}_${SUBSET_NAME} \
 		--model_type ${MODEL_TYPE} \

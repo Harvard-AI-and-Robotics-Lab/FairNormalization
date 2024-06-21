@@ -30,9 +30,7 @@ else
 	BATCH_SIZE=6
 fi
 
-# BATCH_SIZE=20 # ( 10 12 14 16 18 20 24 8 ) best is 6
-# SPLIT_FILE=split7383.csv # split1064.csv split7383.csv # ( split7383.csv split5374.csv split4934.csv ) # ( split243.csv split533.csv split3376.csv split4546.csv split7026.csv split7578.csv split7906.csv split8049.csv split9361.csv split9471.csv )
-SPLIT_FILE=split1064.csv # split1582.csv split1064.csv split2351.csv
+SPLIT_FILE=split.csv 
 SUBSET_NAME=test
 NORMALIZATION_TYPE=fin # fin | bn | lbn
 # PERF_FILE=${MODEL_TYPE}_${NORMALIZATION_TYPE}_${MODALITY_TYPE}_${ATTRIBUTE_TYPE}.csv
@@ -52,7 +50,7 @@ do
 PERF_FILE=${MODEL_TYPE}_${MODALITY_TYPE}_${ATTRIBUTE_TYPE[$j]}.csv
 for (( i=0; i<3; i++ ));
 do
-python train_glaucoma_fair_proposed_allattr_withsplit_retfound.py \
+python train_glaucoma_fair_proposed_allattr_retfound.py \
 		--data_dir /data/home/shim/pyspace/fairness/dataset/ \
 		--result_dir ./results_grape/glaucoma_${PROGRESS_TYPE}_${MODALITY_TYPE}_${ATTRIBUTE_TYPE[$j]}_fin/fullysup_${MODEL_TYPE}_${MODALITY_TYPE}_Task${TASK}_lr${LR}_bz${BATCH_SIZE}_${SUBSET_NAME} \
 		--model_type ${MODEL_TYPE} \

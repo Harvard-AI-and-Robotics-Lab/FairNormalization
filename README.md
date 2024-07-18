@@ -40,7 +40,6 @@ If you find our code helpful for your research, please consider citing our [pape
 
 ```
 
-Shi, Min, Yan Luo, Yu Tian, Lucy Q. Shen, Tobias Elze, Nazlee Zebardast, Mohammad Eslami et al. "Equitable Artificial Intelligence for Glaucoma Screening with Fair Identity Normalization." medRxiv (2023): 2023-12.
 
 # Licence
 

@@ -24,7 +24,7 @@ To run the experiments with the baseline models with the proposed FIN module on 
 ./scripts/train_glaucoma_fair_proposed_npj.sh
 ```
 
-## Citation
+## Acknowledgement and Citation
 
 If you find our code helpful for your research, please consider citing our [paper](https://www.medrxiv.org/content/10.1101/2023.12.13.23299931v1.full.pdf):
 

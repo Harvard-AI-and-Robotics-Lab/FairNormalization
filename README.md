@@ -1,6 +1,6 @@
 # FairNormalization
 
-The code for the paper entitled [**Equitable Artificial Intelligence for Glaucoma Screening with Fair Identity Normalization**](https://www.medrxiv.org/content/10.1101/2023.12.13.23299931v1.full.pdf).
+The code for the paper entitled [**Equitable Artificial Intelligence for Glaucoma Screening with Fair Identity Normalization**](https://www.medrxiv.org/content/10.1101/2023.12.13.23299931v1.full.pdf). If you have any questions, please email <harvardophai@gmail.com>.
 
 <img src="fig/framework.png" width="600">
 
